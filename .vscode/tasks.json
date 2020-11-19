@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "build",
+			"command": "java",
+			"args": [
+				"-jar",
+				"G:\\code\\KickAssembler\\KickAss.jar",
+				"-odir",
+				"./bin",
+				"-log",
+				"./bin/buildlog.txt",
+				"-showmem",
+				"-debugdump",
+				"-vicesymbols",
+				"game.asm"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$kickass",
+				"$kickass.single"
+			],
+			"group": "build"
+		}
+	]
+}
