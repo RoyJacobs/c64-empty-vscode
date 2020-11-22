@@ -1,5 +1,11 @@
+.segmentdef Upstart [start=$0801]
+.segmentdef Code [start=$8000]
+.file [name="game.prg", segments="Upstart, Code"]
+
+.segment Upstart
 BasicUpstart2(start)
 
+.segment Code
 start:
     sei
 
